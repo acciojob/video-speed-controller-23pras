@@ -1,2 +1,42 @@
+.player {
+  max-width: 750px;
+  margin: 20px auto;
+  background: #000;
+  border: 5px solid #ccc;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
 
-/* Your CSS Code here. */
+.viewer {
+  width: 100%;
+  max-height: 430px;
+}
+
+.player__controls {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: #eee;
+}
+
+.player__button, .player__slider {
+  margin: 0 5px;
+}
+
+.progress {
+  flex: 1;
+  background: #ccc;
+  height: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.progress__filled {
+  width: 0;
+  background: #f00;
+  flex: 0;
+  height: 100%;
+  transition: width 0.1s;
+}
